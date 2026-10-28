@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soindued-lorapeft_jd058"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告LoRA 与参数高效微调研究员·投机解码的命中率相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "soindued" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://soindued.github.io"
+Repository = "https://github.com/soindued/lorapeft_jd058"
+Issues = "https://github.com/soindued/lorapeft_jd058/issues"
+
+[project.scripts]
+lorapeft_jd058 = "lorapeft_jd058:main"
+
+[tool.setuptools]
+py-modules = ["lorapeft_jd058"]
